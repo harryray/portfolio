@@ -1,0 +1,67 @@
+.blog-post {
+	background: url('../images/pink-n-blue.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 125px 0;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-attachment: fixed;
+	position: relative;
+}
+.blog-post__content {
+	background: white;
+	width: calc(100vw - 250px);
+	margin: 0 auto;
+	padding: 125px;
+	box-sizing: border-box;
+	font-size: 18px;
+	max-width: 1250px;
+}
+.blog-post__header {
+	margin-bottom:125px;
+}
+.blog-post__content h1 {
+	font-size: 68px;
+	font-weight: bold;
+	margin-bottom:30px;
+	line-height: 72px;
+  	font-family: 'Work Sans', sans-serif;
+  	text-transform: uppercase;
+}
+.blog-post__content h2 {
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	margin-bottom: 20px;
+	margin-top:40px;
+	font-weight: 800;
+}
+.blog-post__content p {
+	font-size: 18px;
+	line-height: 32px;
+}
+.blog-post__content strong {
+	font-weight: 400;
+	color:#333;
+}
+.blog-post__content em {
+	font-style: italic;
+}
+.blog-post__body {
+	padding-right: 75px;
+	max-width: 750px;
+}
+.blog-post__body img {
+	width: 400px;
+	margin: 50px 0;
+}
+.blog-post__back-to-blog a {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	font-size: 58px;
+	color: white;
+	font-weight: 800;
+	font-family: 'Work Sans', sans-serif;
+	top: 25px;
+}
