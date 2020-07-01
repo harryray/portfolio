@@ -6,18 +6,16 @@ import Image from "../components/image"
 import PortfolioGrid from "../components/portfolio/grid"
 import SEO from "../components/seo"
 import BlogGrid from "../components/blog/grid"
+import Title from "../components/home/title"
 
 import skeleGif from '../images/home/about-me/skele.gif'
 import svgOne from '../images/home/watermelon-pack-illustration-18.svg'
-
-import "../js/home.js"
 
 const IndexPage = () => (
   <Layout>
     
   <section id="section__home__splash">
-    <h1   id="live-heading"><div><span className="ghost">H</span><span className="ghost">A</span><span className="ghost">R</span><span className="ghost">R</span><span className="ghost">Y</span></div><div><span className="ghost">R</span><span className="ghost">A</span><span className="ghost">Y</span></div></h1>
-    <span id="fake-heading"><div><span>H</span><span>A</span><span>R</span><span>R</span><span>Y</span></div><div><span>R</span><span>A</span><span>Y</span></div></span>
+    <Title />
   </section>
 
   <section id="section__home__projects" className="margin-bottom--3x">

@@ -1,19 +1,14 @@
 import React from "react"
 
+import Tile from "./tile"
+
 const PortfolioGrid = () => {
 	return (
 		<>
 			<div className="filters"><span className="filters__title">I WANT TO SEE:</span><span className="filters__filter">SHOPIFY</span><span className="filters__filter">SEO</span><span className="filters__filter">WORDPRESS</span><span className="filters__filter">PERCH CMS</span><span className="filters__filter">CONCEPT</span></div>
 		    <div className="grid__wrap">
 		      <div className="grid__container">
-		        <div id="keith-scarrott" className="grid__item" ><a href="projects/keith-scarrott.html">
-		          <div className="grid__item-inner">
-		            <div className="grid__item-meta">
-		              <p>SHOPIFY</p>
-		            </div>
-		            <p className="grid__item-title">KEITH SCARROTT</p>
-		          </div>
-		        </a></div>
+		        <Tile slug='keith-scarrott' cat='shopify' title='Keith Scarrott' />
 		        <div id="cargilfield" className="grid__item" ><a href="projects/cargilfield.html">
 		          <div className="grid__item-inner">
 		            <div className="grid__item-meta">
