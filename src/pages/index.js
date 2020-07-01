@@ -11,6 +11,35 @@ import Title from "../components/home/title"
 import skeleGif from '../images/home/about-me/skele.gif'
 import svgOne from '../images/home/watermelon-pack-illustration-18.svg'
 
+
+function HomeParallax() {
+
+const t1 = document.querySelector("#section__home__fresh .display-title.ghost")
+const t2 = document.querySelectorAll("#section__home__fresh .display-title")[1]
+const tPos1 = 0 - window.pageYOffset/80
+const tPos2 = 0 - window.pageYOffset/40
+
+const i1 = document.querySelectorAll("#section__home__fresh .gatsby-image-wrapper")[0]
+const i2 = document.querySelectorAll("#section__home__fresh .gatsby-image-wrapper")[1]
+
+if(t1 && t2) {
+  t1.style.transform = "translateY(" + tPos1 + "%)"
+  t2.style.transform = "translateY(" + tPos2 + "%)"
+}
+
+console.log("translateY(" + (0 - window.pageYOffset/50) + "%) rotate(-" + ((Math.round(0 - window.pageYOffset / 90) * 10) /10) + "deg)");
+
+if(i1 && i2) {
+  i1.style.transform = "translateY(" + (0 - window.pageYOffset/90) + "%) rotate(" + (window.pageYOffset / 100) + "deg)"
+  i2.style.transform = "translateY(" + (0 - window.pageYOffset/50) + "%) rotate(" + (0 - window.pageYOffset / 100) + "deg)"
+}
+
+};
+
+window.addEventListener("scroll", function(){
+  HomeParallax();  
+});
+
 const IndexPage = () => (
   <Layout>
     
