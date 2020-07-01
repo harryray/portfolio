@@ -1,6 +1,8 @@
 import React from "react"
 
-const Tile = props => {
+const Tile = ({props}) => {
+
+	console.log( props )
 
 	return (
 		<div id={ props.slug } className={ props.modifier ? "grid__item " + props.modifier : "grid__item" } ><a href={ "projects/" + props.slug }>
