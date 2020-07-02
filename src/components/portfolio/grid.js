@@ -68,7 +68,7 @@ const PortfolioGrid = () => {
 			</div>
 		    <div className="grid__wrap">
 		      <div className="grid__container">
-		      	{ portfolioTiles.map( (tile, i) => ( <Tile props={ tile } key={i + 1} />) ) }
+		      	{ portfolioTiles.map( tile => <Tile {...tile} key={tile.slug} /> ) }
 		      </div>
 		    </div>
 		</>
