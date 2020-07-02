@@ -1,6 +1,6 @@
 import React from "react"
 
-const Tile = ({props}) => {
+const Tile = (props) => {
 
 	console.log( props )
 
