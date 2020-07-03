@@ -16,11 +16,6 @@ const portfolioTiles = [
 		title:'Cargilfield'
 	},
 	{
-		slug: 'keith-scarrott',
-		cat:'shopify',
-		title:'Keith Scarrott'
-	},
-	{
 		slug: 'nowrevive',
 		cat:'perch cms',
 		title:'Nowrevive',

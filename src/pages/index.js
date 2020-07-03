@@ -14,24 +14,14 @@ import svgOne from '../images/home/watermelon-pack-illustration-18.svg'
 
 function HomeParallax() {
 
-const t1 = document.querySelector("#section__home__fresh .display-title.ghost")
-const t2 = document.querySelectorAll("#section__home__fresh .display-title")[1]
-const tPos1 = 0 - window.pageYOffset/80
-const tPos2 = 0 - window.pageYOffset/40
-
 const i1 = document.querySelectorAll("#section__home__fresh .gatsby-image-wrapper")[0]
 const i2 = document.querySelectorAll("#section__home__fresh .gatsby-image-wrapper")[1]
-
-if(t1 && t2) {
-  t1.style.transform = "translateY(" + tPos1 + "%)"
-  t2.style.transform = "translateY(" + tPos2 + "%)"
-}
 
 console.log("translateY(" + (0 - window.pageYOffset/50) + "%) rotate(-" + ((Math.round(0 - window.pageYOffset / 90) * 10) /10) + "deg)");
 
 if(i1 && i2) {
-  i1.style.transform = "translateY(" + (0 - window.pageYOffset/90) + "%) rotate(" + (window.pageYOffset / 100) + "deg)"
-  i2.style.transform = "translateY(" + (0 - window.pageYOffset/50) + "%) rotate(" + (0 - window.pageYOffset / 100) + "deg)"
+  i1.style.transform = "translateX(" + (window.pageYOffset/150) + "%) translateY(" + (0 - window.pageYOffset/30) + "%) rotate(" + (20 + window.pageYOffset / 200) + "deg)"
+  i2.style.transform = "translateX(" + (0 - window.pageYOffset/90) + "%) translateY(" + (0 - window.pageYOffset/20) + "%) rotate(" + (0 - window.pageYOffset / 90) + "deg)"
 }
 
 };
